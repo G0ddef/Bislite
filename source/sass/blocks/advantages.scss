@@ -1,0 +1,186 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  padding-top: 67px;
+  padding-bottom: 46px;
+
+  background-color: $grey;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__item {
+  margin-right: 36px;
+  width: 225px;
+
+  &--coding {
+    margin-right: 0;
+    width: 214px;
+  }
+}
+
+.advantages__subtitle {
+  @include text-style(15px, 20px);
+
+  position: relative;
+
+  margin: 0;
+  padding-left: 60px;
+  width: 160px;
+
+  color: $black;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -7px;
+    left: 0;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-color: $light-blue;
+    border-radius: 50%;
+  }
+
+  &--clean {
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 11px;
+
+      display: block;
+      width: 20px;
+      height: 23px;
+
+      background-image: url("../img/pencil.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--responsive {
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 4px;
+      left: 10px;
+
+      display: block;
+      width: 20px;
+      height: 16px;
+
+      background-image: url("../img/screen.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--psd {
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 5px;
+      left: 13px;
+
+      display: block;
+      width: 16px;
+      height: 16px;
+
+      background-image: url("../img/layer.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--coding {
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 2px;
+      left: 10px;
+
+      display: block;
+      width: 25px;
+      height: 24px;
+
+      background-image: url("../img/telegram.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.advantages__description {
+  @include text-style(13px, 20px);
+
+  margin: 0;
+  padding-top: 28px;
+
+  color: $black;
+}
+
+.advantages__link {
+  @include text-style (13px, 20px);
+
+  position: relative;
+
+  display: block;
+  padding-top: 19px;
+  padding-left: 14px;
+  width: 80px;
+
+  color: $light-blue;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    left: 3px;
+
+
+    display: block;
+    width: 3px;
+    height: 6px;
+
+    background-color: #4f4f4f;
+    transform: rotate(40deg);
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    left: 1px;
+
+    width: 6px;
+    height: 3px;
+
+    background-color: #4f4f4f;
+    transform: rotate(54deg);
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fall-back;
+  src: local("Arial regular"),
+    url("../fonts/ArialRegular.woff2") format("woff2"),
+    url("../fonts/ArialRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fall-back;
+  src: local("Arial bold"),
+    url("../fonts/ArialBold.woff2") format("woff2"),
+    url("../fonts/ArialBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fall-back;
+  src: local("Arial bold"),
+    url("../fonts/ArialBoldItalic.woff2") format("woff2"),
+    url("../fonts/ArialBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fall-back;
+  src: local("Lato regular"),
+    url("../fonts/LatoRegular.woff2") format("woff2"),
+    url("../fonts/LatoRegular.woff") format("woff");
+}

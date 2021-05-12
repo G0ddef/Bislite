@@ -1,0 +1,11 @@
+.container {
+  @include centring(0 auto, 1000px);
+
+  &--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 42px;
+  }
+}
