@@ -2,6 +2,10 @@
   background-color: $grey;
 }
 
+.header__logo-link {
+  display: block;
+}
+
 .header__logo {
   @include text-style(50px, 20px);
 
@@ -13,6 +17,10 @@
 
   &--blue {
     color: $light-blue;
+  }
+
+  &:hover {
+    opacity: 0.7;
   }
 }
 

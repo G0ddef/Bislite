@@ -1,0 +1,125 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  padding-top: 57px;
+  padding-bottom: 42px;
+}
+
+.reviews__container {
+  width: 500px;
+}
+
+.reviews__subtitle {
+  @include text-style(15px, 20px);
+
+  position: relative;
+
+  margin: 0;
+  padding-left: 39px;
+
+  color: $black;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &--testimonials {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -2px;
+      left: 0;
+
+      display: block;
+      width: 24px;
+      height: 23px;
+
+      background-image: url("../img/comments.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--clients {
+    padding-bottom: 16px;
+    padding-left: 59px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -3px;
+      left: 20px;
+
+      display: block;
+      width: 24px;
+      height: 20px;
+
+      background-image: url("../img/clients.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.reviews__description {
+  @include text-style(14px, 24px);
+
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  width: 430px;
+}
+
+.reviews__author {
+  @include text-style(14px, 24px);
+
+  font-style: italic;
+  font-weight: 700;
+}
+
+.reviews__partners {
+  margin-left: 20px;
+  width: 479px;
+
+  border-collapse: collapse;
+}
+
+.reviews__icon {
+  margin: -1px;
+
+  border: 1px solid $grey;
+  box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.09);
+
+  &--cox {
+    padding-top: 20px;
+    padding-right: 23px;
+    padding-left: 33px;
+  }
+
+  &--cnn {
+    padding-top: 11px;
+    padding-right: 32px;
+    padding-left: 31px;
+  }
+
+  &--apartment {
+    padding-top: 17px;
+    padding-left: 22px;
+  }
+
+  &--john {
+    padding-top: 20px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+  }
+
+  &--banana {
+    padding-top: 18px;
+    padding-left: 38px;
+  }
+
+  &--fuji {
+    padding-top: 25px;
+    padding-left: 6px;
+  }
+}

@@ -10,8 +10,7 @@
   <header class="header">
     <div class="container container--flex">
       <div class="header__main-logo">
-        <span class="header__logo">Bis</span>
-        <span class="header__logo header__logo--blue">Lite</span>
+        <a href="#" class="header__logo">Bis<span class="header__logo header__logo--blue">Lite</span></a>
       </div>
       <ul class="header__menu-list">
         <li class="header__menu-item header__menu-item--home">
@@ -109,7 +108,7 @@
             <p class="advantages__description">
               Phasellus lobortis metus non augue sodales volutpat.
               Vestibulum sit amet nibh eros, hendrerit venenatis est.
-              In vitae nulla nec purus cursus pretium sed id magna. 
+              In vitae nulla nec purus cursus pretium sed id magna.
             </p>
             <a href="#" class="advantages__link">Read more</a>
           </li>
@@ -118,7 +117,7 @@
             <p class="advantages__description">
               Vivamus convallis feugiat mauris sed posuere.
               Nam rutrum, quam quis euismod commodo, elit est porta quam,
-              non placerat eros neque porta ante. Fusce quis odio urna. 
+              non placerat eros neque porta ante. Fusce quis odio urna.
             </p>
             <a href="#" class="advantages__link">Read more</a>
           </li>
@@ -127,34 +126,77 @@
     </section>
     <div class="latest-works">
       <div class="container">
-        <div class="latest-works__button-wrapper">
-          <p class="latest-works__control">
-            <span class="latest-works__button visually-hidden">Влево</span>
-          </p>
-          <p class="latest-works__control">
-            <span class="latest-works__button visually-hidden">Вправо</span>
-          </p>
+        <div class="latest-works__wrapper">
+          <h2 class="latest-works__title">Latest Works</h2>
+          <div class="latest-works__button-wrapper">
+            <p class="latest-works__control latest-works__control--left">
+              <span class="visually-hidden">Влево</span>
+            </p>
+            <p class="latest-works__control latest-works__control--right">
+              <span class="visually-hidden">Вправо</span>
+            </p>
+          </div>
         </div>
         <ul class="latest-works__slider-list">
           <li class="latest-works__slider-item">
-            <img src="#" alt="Кратинка 1" width="100" height="100">
+            <p class="latest-works__img-wrapper">
+              <img src="img/paper.jpg" alt="Кратинка 1" width="221" height="160">
+            </p>
+            <p class="latest-works__transform">
+              <a class="latest-works__icon latest-works__icon--preview">
+                <span class="visually-hidden">Preview</span>
+              </a>
+              <a class="latest-works__icon latest-works__icon--link">
+                <span class="visually-hidden">Link</span>
+              </a>
+            </p>
           </li>
           <li class="latest-works__slider-item">
-            <img src="#" alt="Картинка 2" width="100" height="100">
+            <p class="latest-works__img-wrapper">
+              <img src="img/lemon.jpg" alt="Картинка 2" width="221" height="160">
+            </p>
+            <p class="latest-works__transform">
+              <a class="latest-works__icon latest-works__icon--preview">
+                <span class="visually-hidden">Preview</span>
+              </a>
+              <a class="latest-works__icon latest-works__icon--link">
+                <span class="visually-hidden">Link</span>
+              </a>
+            </p>
           </li>
           <li class="latest-works__slider-item">
-            <img src="#" alt="Картинка 3" width="100" height="100">
+            <p class="latest-works__img-wrapper">
+              <img src="img/figure.jpg" alt="Картинка 3" width="221" height="160">
+            </p>
+            <p class="latest-works__transform">
+              <a class="latest-works__icon latest-works__icon--preview">
+                <span class="visually-hidden">Preview</span>
+              </a>
+              <a class="latest-works__icon latest-works__icon--link">
+                <span class="visually-hidden">Link</span>
+              </a>
+            </p>
           </li>
-          <li class="latest-works__slider-item">
-            <img src="#" alt="Картинка 4" width="100" height="100">
+          <li class="latest-works__slider-item latest-works__slider-item--last">
+            <p class="latest-works__img-wrapper">
+              <img src="img/darts.jpg" alt="Картинка 4" width="221" height="160">
+            </p>
+            <p class="latest-works__transform">
+              <a class="latest-works__icon latest-works__icon--preview">
+                <span class="visually-hidden">Preview</span>
+              </a>
+              <a class="latest-works__icon latest-works__icon--link">
+                <span class="visually-hidden">Link</span>
+              </a>
+            </p>
           </li>
         </ul>
       </div>
     </div>
     <section class="reviews">
-      <div class="container">
+      <div class="container container--flex container--reviews">
         <div class="reviews__container">
-          <h3 class="reviews__subtitle">Testimonials</h3>
+          <h3 class="reviews__subtitle reviews__subtitle--testimonials">Testimonials</h3>
           <p class="reviews__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Maecenas ut nulla sapien, at aliquam erat. Sed vitae massa
@@ -166,28 +208,28 @@
           <span class="reviews__author">John Travis, CEO, DomainName.com</span>
         </div>
         <div class="reviews__container">
-          <h3 class="reviews__subtitle">Our Clients</h3>
+          <h3 class="reviews__subtitle reviews__subtitle--clients">Our Clients</h3>
           <table class="reviews__partners">
             <tr>
-              <td>
-                <img src="#" alt="Картинка 1" width="100" height="100">
+              <td class="reviews__icon reviews__icon--cox">
+                <img src="img/cox.png" alt="Картинка 1" width="103" height="64">
               </td>
-              <td>
-                <img src="#" alt="Картинка 2" width="100" height="100">
+              <td class="reviews__icon reviews__icon--cnn">
+                <img src="img/cnn.png" alt="Картинка 2" width="97" height="56">
               </td>
-              <td>
-                <img src="#" alt="Картинка 3" width="100" height="100">
+              <td class="reviews__icon reviews__icon--apartment">
+                <img src="img/apartment.png" alt="Картинка 3" width="116" height="43">
               </td>
             </tr>
             <tr>
-              <td>
-                <img src="#" alt="Картинка 4" width="100" height="100">
+              <td class="reviews__icon reviews__icon--john">
+                <img src="img/john.png" alt="Картинка 4" width="110" height="71">
               </td>
-              <td>
-                <img src="#" alt="Картинка 5" width="100" height="100">
+              <td class="reviews__icon reviews__icon--banana">
+                <img src="img/banana.png" alt="Картинка 5" width="81" height="67">
               </td>
-              <td>
-                <img src="#" alt="Картинка 6" width="100" height="100">
+              <td class="reviews__icon reviews__icon--fuji">
+                <img src="img/fuji.png" alt="Картинка 6" width="147" height="34">
               </td>
             </tr>
           </table>
@@ -195,7 +237,7 @@
       </div>
     </section>
     <div class="download-file">
-      <div class="container">
+      <div class="container container--flex container--download">
         <p class="download-file__description">
           This is a clean and modern, four column website PSD template.
           You can code it into a Wordpress website, HTML5 responsive website
@@ -223,7 +265,7 @@
             neque eu velit dictum molestie.
           </p>
         </li>
-        <li class="footer__menu-item">
+        <li class="footer__menu-item footer__menu-item--explore">
           <h3 class="footer__subtitle">Explore</h3>
           <ul class="footer__bottom-menu-list">
             <li class="footer__bottom-menu-item">
@@ -243,7 +285,7 @@
             </li>
           </ul>
         </li>
-        <li class="footer__menu-item">
+        <li class="footer__menu-item footer__menu-item--browse">
           <h3 class="footer__subtitle">Browse</h3>
           <ul class="footer__bottom-menu-list">
             <li class="footer__bottom-menu-item">
@@ -263,54 +305,59 @@
             </li>
           </ul>
         </li>
-        <li class="footer__menu-item">
+        <li class="footer__menu-item footer__menu-item--contact">
           <h3 class="footer__subtitle">Contact Us</h3>
-          <span class="footer__contact-info">BisLite Inc.</span>
-          <span class="footer__contact-info">Always Street 2650X - 125 - Canada</span>
+          <span class="footer__contact-info footer__contact-info--bislite">BisLite Inc.</span>
+          <span class="footer__contact-info">Always Street 265</span>
           <span class="footer__contact-info">0X - 125 - Canada</span>
-          <span class="footer__contact-info">Phone: 987-6543-210</span>
+          <span class="footer__contact-info footer__contact-info--phone">Phone: 987-6543-210</span>
           <span class="footer__contact-info">Fax: 987-6543-210</span>
         </li>
-        <li class="footer__menu-item">
+        <li class="footer__menu-item footer__menu-item--connect">
           <h3 class="footer__subtitle">Connect with us</h3>
           <ul class="footer__networks-list">
             <li class="footer__networks-item">
-              <a href="" class="footer__networks-link">
+              <a href="#" class="footer__networks-link footer__networks-link--facebook">
                 <span class="visually-hidden">facebook</span>
               </a>
             </li>
             <li class="footer__networks-item">
-              <a href="" class="footer__networks-link">
+              <a href="#" class="footer__networks-link footer__networks-link--ball">
                 <span class="visually-hidden">ball</span>
               </a>
             </li>
             <li class="footer__networks-item">
-              <a href="" class="footer__networks-link">
-                <span class="visually-hidden">printercet</span>
+              <a href="#" class="footer__networks-link footer__networks-link--pintercet">
+                <span class="visually-hidden">pintercet</span>
               </a>
             </li>
             <li class="footer__networks-item">
-              <a href="" class="footer__networks-link">
-                <span class="visually-hidden">linkin</span>
+              <a href="#" class="footer__networks-link footer__networks-link--linkedin">
+                <span class="visually-hidden">linkedin</span>
               </a>
             </li>
             <li class="footer__networks-item">
-              <a href="" class="footer__networks-link">
+              <a href="#" class="footer__networks-link footer__networks-link--skype">
                 <span class="visually-hidden">skype</span>
               </a>
             </li>
             <li class="footer__networks-item">
-              <a href="" class="footer__networks-link">
-                <span class="visually-hidden">message</span>
+              <a href="#" class="footer__networks-link footer__networks-link--share">
+                <span class="visually-hidden">share</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
       <div class="footer__wrapper">
-        <p class="footer__copyright"></p>
+        <p class="footer__copyright">
+          © Copyright 2012 - BisLite Inc. All rights reserved.
+          Some free icons used here are created by Brankic1979.com. 
+          Client Logos are copyright and trademark of the
+          respective owners / companies.
+        </p>
         <p class="footer__img-wrapper">
-          <img src="#" alt="Второстепенное лого" width="100" height="100">
+          <a href="#" class="header__logo">Bis<span class="header__logo header__logo--blue">Lite</span></a>
         </p>
       </div>
     </div>
