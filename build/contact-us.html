@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Проект Bislite</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container container--flex">
+      <div class="header__main-logo">
+        <a href="index.html" class="header__logo">Bis<span class="header__logo header__logo--blue">Lite</span></a>
+      </div>
+      <ul class="header__menu-list">
+        <li class="header__menu-item header__menu-item--home">
+          <a href="#" class="header__link">Home</a>
+        </li>
+        <li class="header__menu-item header__menu-item--about-us">
+          <a href="#" class="header__link">About Us</a>
+        </li>
+        <li class="header__menu-item header__menu-item--services">
+          <a href="#" class="header__link">Services</a>
+          <ul class="header__sub-menu-list">
+            <li class="header__sub-menu-item header__sub-menu-item--web">
+              <a href="#" class="header__sub-menu-link">Web Design</a>
+            </li>
+            <li class="header__sub-menu-item">
+              <a href="#" class="header__sub-menu-link">WordPress Design</a>
+            </li>
+            <li class="header__sub-menu-item">
+              <a href="#" class="header__sub-menu-link">Mobile App Development</a>
+            </li>
+            <li class="header__sub-menu-item">
+              <a href="#" class="header__sub-menu-link">Internet Marketing</a>
+            </li>
+            <li class="header__sub-menu-item header__sub-menu-item--social">
+              <a href="#" class="header__sub-menu-link">Social Media Management</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__menu-item header__menu-item--portfolio">
+          <a href="#" class="header__link">Portfolio</a>
+        </li>
+        <li class="header__menu-item header__menu-item--blog">
+          <a href="#" class="header__link">Blog</a>
+        </li>
+        <li class="header__menu-item header__menu-item--contact-us">
+          <a href="#" class="header__link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="contact-us">
+      <div class="container">
+        <h2 class="contact-us__title">Contact Us</h2>
+        <div class="contact-us__row">
+          <div class="contact-us__wrapper contact-us__wrapper--form">
+            <p class="contact-us__description">
+              Thank you for stopping by. Please use the form below to
+              contact us and will get back to you at the earliest possibl
+            </p>
+            <p class="contact-us__description contact-us__description--continue">
+              For feedback or questions, please email us at:
+              <a href="#" class="contact-us__link">email@bislite.com</a>
+            </p>
+            <form class="contact-form" action="#" method="POST">
+              <p class="contact-form__wrapper">
+                <label class="contact-form__field-name" for="name">Name</label>
+                <input class="contact-form__text-input" type="text" name="name" id="name" required="">
+              </p>
+              <p class="contact-form__wrapper contact-form__wrapper--email">
+                <label class="contact-form__field-name" for="email">Email Address</label>
+                <input class="contact-form__text-input" type="email" name="email" id="email" required="">
+              </p>
+              <p class="contact-form__wrapper contact-form__wrapper--subject">
+                <label class="contact-form__field-name" for="subject">Subject</label>
+                <input class="contact-form__text-input" type="text" name="subject" id="subject" required="">
+              </p>
+              <p class="contact-form__wrapper contact-form__wrapper--description">
+                <label class="contact-form__field-name" for="description">Description</label>
+                <input class="contact-form__text-input contact-form__text-input--textarea" type="textarea" name="description" id="description" required="">
+              </p>
+              <p class="contact-form__wrapper contact-form__wrapper--button">
+                <button class="contact-form__button" type="submit">
+                  <span class="visually-hidden">Подтвердить</span>
+                  <img class="contact-us__img" src="img/button.png" alt="Кнопка подтвердить" width="164" height="64">
+                </button>
+              </p>
+            </form>
+          </div>
+          <div class="contact-us__wrapper contact-us__wrapper--map">
+            <div class="contact-us__map">
+              <b class="contact-us__text">We are here</b>
+              <p class="contact-us__map-img">
+                <img src="img/map.jpg" alt="Карта" width="300" height="200">
+              </p>
+            </div>
+            <div class="contact-us__address-wrapper">
+              <h3 class="contact-us__subtitle">Office Address</h3>
+              <span class="contact-us__address contact-us__address--bislite">BisLite Inc.</span>
+              <span class="contact-us__addresst">Always Street 265</span>
+              <span class="contact-us__address">0X - 125 - Canada</span>
+              <span class="contact-us__address contact-us__address--phone">Phone: 987-6543-210</span>
+              <span class="contact-us__address">Fax: 987-6543-210</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <h3 class="footer__subtitle">About us</h3>
+          <p class="footer__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Morbi euismod placerat dui et tincidunt. Sed sollicitudin
+            posuere auctor. Phasellus at ultricies nisl. Integer at leo
+            eros. Ut nec lorem id orci convallis porta. Donec pharetra
+            neque eu velit dictum molestie.
+          </p>
+        </li>
+        <li class="footer__menu-item footer__menu-item--explore">
+          <h3 class="footer__subtitle">Explore</h3>
+          <ul class="footer__bottom-menu-list">
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">Home</a>
+            </li>
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">About Us</a>
+            </li>
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">Services</a>
+            </li>
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">Portfolio</a>
+            </li>
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__menu-item footer__menu-item--browse">
+          <h3 class="footer__subtitle">Browse</h3>
+          <ul class="footer__bottom-menu-list">
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">Careers</a>
+            </li>
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">Press & Media</a>
+            </li>
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">Terms of Service</a>
+            </li>
+            <li class="footer__bottom-menu-item">
+              <a href="" class="footer__link">Privacy Policy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__menu-item footer__menu-item--contact">
+          <h3 class="footer__subtitle">Contact Us</h3>
+          <span class="footer__contact-info footer__contact-info--bislite">BisLite Inc.</span>
+          <span class="footer__contact-info">Always Street 265</span>
+          <span class="footer__contact-info">0X - 125 - Canada</span>
+          <span class="footer__contact-info footer__contact-info--phone">Phone: 987-6543-210</span>
+          <span class="footer__contact-info">Fax: 987-6543-210</span>
+        </li>
+        <li class="footer__menu-item footer__menu-item--connect">
+          <h3 class="footer__subtitle">Connect with us</h3>
+          <ul class="footer__networks-list">
+            <li class="footer__networks-item">
+              <a href="#" class="footer__networks-link footer__networks-link--facebook">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li class="footer__networks-item">
+              <a href="#" class="footer__networks-link footer__networks-link--ball">
+                <span class="visually-hidden">ball</span>
+              </a>
+            </li>
+            <li class="footer__networks-item">
+              <a href="#" class="footer__networks-link footer__networks-link--pintercet">
+                <span class="visually-hidden">pintercet</span>
+              </a>
+            </li>
+            <li class="footer__networks-item">
+              <a href="#" class="footer__networks-link footer__networks-link--linkedin">
+                <span class="visually-hidden">linkedin</span>
+              </a>
+            </li>
+            <li class="footer__networks-item">
+              <a href="#" class="footer__networks-link footer__networks-link--skype">
+                <span class="visually-hidden">skype</span>
+              </a>
+            </li>
+            <li class="footer__networks-item">
+              <a href="#" class="footer__networks-link footer__networks-link--share">
+                <span class="visually-hidden">share</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer__wrapper">
+        <p class="footer__copyright">
+          © Copyright 2012 - BisLite Inc. All rights reserved.
+          Some free icons used here are created by Brankic1979.com.
+          Client Logos are copyright and trademark of the
+          respective owners / companies.
+        </p>
+        <p class="footer__img-wrapper">
+          <a href="#" class="header__logo">Bis<span class="header__logo header__logo--blue">Lite</span></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
