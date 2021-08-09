@@ -1,0 +1,206 @@
+.portfolio__title {
+  position: relative;
+
+  @include text-style(15px, 20px);
+  margin: 0;
+  padding-top: 44px;
+  padding-bottom: 15px;
+  padding-left: 39px;
+
+  color: $black;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  border-bottom: 1px solid $grey;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 39px;
+    left: -1px;
+
+    display: block;
+    width: 29px;
+    height: 26px;
+
+    background-image: url("../img/pen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.portfolio__nav-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+
+  list-style: none;
+  border-bottom: 1px solid $grey;
+}
+
+.portfolio__nav-item {
+  margin-top: 14px;
+  padding-top: 4px;
+  padding-bottom: 1px;
+
+  text-align: center;
+
+  &--active {
+    background-color: $background-blue;
+  }
+
+  &--all {
+    margin-right: 12px;
+    width: 50px;
+  }
+
+  &--websites {
+    margin-right: 28px;
+    width: 61px;
+  }
+
+  &--wordpress {
+    margin-right: 26px;
+    width: 71px;
+  }
+
+  &--mobile {
+    margin-right: 23px;
+    width: 83px;
+  }
+
+  &--icons {
+    margin-right: 25px;
+    width: 41px;
+  }
+
+  &--logos {
+    margin-right: 23px;
+    width: 44px;
+  }
+
+  &--graphics {
+    width: 65px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.portfolio__link {
+  @include text-style(14px, 20px);
+
+  color: $black;
+}
+
+.portfolio__photos-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 1px;
+
+  list-style: none;
+  border-bottom: 1px solid $grey;
+}
+
+.portfolio__photos-item {
+  margin-right: 40px;
+  margin-bottom: 33px;
+
+  &:nth-child(4n+4) {
+    margin-right: 0;
+  }
+}
+
+.portfolio__breadcrumbs-list {
+  @include centring(0 auto, 236px);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 45px;
+
+  list-style: none;
+}
+
+.portfolio__breadcrumb-item {
+  margin-right: 3px;
+
+  &:nth-last-child(2) {
+    margin-left: 6px;
+    margin-right: 30px;
+  }
+
+  &--button {
+    background-color: $grey;
+  }
+}
+
+.portfolio__breadcrumb-link {
+  @include text-style(14px, 20px);
+
+  position: relative;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  color: $black;
+
+  &--active {
+    background-color: $background-blue;
+  }
+
+  &--next-page {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 10px;
+      left: 5px;
+
+      display: block;
+      width: 11px;
+      height: 8px;
+
+      background-image: url("../img/arrow2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--last-page {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 10px;
+      left: 8px;
+
+      display: block;
+      width: 6px;
+      height: 8px;
+
+      background-image: url("../img/arrow1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &:hover:not(.portfolio__breadcrumb-link--active) {
+    opacity: 0.7;
+
+    background-color: $background-blue;
+  }
+}
